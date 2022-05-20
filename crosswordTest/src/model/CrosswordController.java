@@ -13,13 +13,27 @@ public class CrosswordController {
 	 */
 	private Cell [][] crossword;
 	
+	public CrosswordController(){
+		this.crossword= new Cell[50][50];
+	}
+
 	/**
 	 * method for initializing a crossword puzzle
 	 * @param puzzle is a matrix of Strings containing 
 	 * the initial state of a crossword puzzle
 	 */
 	public void initCrossword(String[][] puzzle) {
-		
+		this.crossword = new Cell[50][50];
+		int count =0;
+		CellType cellType;
+		for(int i= 0; i < puzzle.length;i++ ){
+			for(int j= 0; j < puzzle[0].length;j++){
+				count ++;				
+				if(puzzle[i][j].equals("")){
+					
+				}
+			}
+		}
 		
 	}
 	/**

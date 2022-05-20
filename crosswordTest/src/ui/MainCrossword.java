@@ -83,13 +83,13 @@ public class MainCrossword {
 
 	}
 
-public void evaluateWord() {
+	public void evaluateWord() {
 		
 		
 	}
 
 
-public void evaluateLetter() {
+	public void evaluateLetter() {
 	System.out.println("Please insert a letter to evaluate");
 	String letter= sc.nextLine();
 	
@@ -104,7 +104,7 @@ public void evaluateLetter() {
 	}
 
 
-public void giveHint() {
+	public void giveHint() {
 	System.out.println("\nTo provide a hint, please insert a letter\n");
 	String letter= sc.nextLine();
 	
@@ -116,17 +116,17 @@ public void giveHint() {
 	}
 
 
-private void intGame() {
+	private void intGame() {
 	System.out.println("\nThe game is about to get initialized please wait\n");
 	TestCases test = new TestCases();
 	crossword.initCrossword(test.getSmall());
 	System.out.println("\nThe game has been initialized with the small test case\n");
-}
+	}
 
 
-/**
- * Method for printing the crossword puzzle 
- */
+	/**
+ 	* Method for printing the crossword puzzle 
+ 	*/
 	public void printCrossword() {
 		
 		//Se pregunta si el juego está inicializado
